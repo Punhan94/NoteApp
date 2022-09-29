@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/noteItemCardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/noteItemLinerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#FF9800"
+            />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#FFC107"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:maxLines="4"
+            />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

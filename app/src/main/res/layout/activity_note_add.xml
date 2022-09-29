@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#FFC107"
+    tools:context=".view.NoteAddActivity">
+
+    <EditText
+        android:id="@+id/editTextNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:layout_marginVertical="10dp"
+        android:hint="@string/enter_note_title"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextNoteDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginVertical="10dp"
+        android:hint="@string/enter_note"
+        android:gravity="start|top"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:inputType="textMultiLine"
+        android:minHeight="300dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
